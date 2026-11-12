@@ -1,0 +1,11 @@
+¿Cómo funciona la función de impresión?
+
+La función print() envía texto y otros valores al terminal.
+
+print('Hello world!') # Hello world!
+
+También puedes usar la función print para mostrar múltiples valores, o argumentos, a la vez separándolos con comas.
+
+print('My favorite colors are', 'blue', 'green', 'red') # Output: My favorite colors are blue green red
+
+Python agrega automáticamente un espacio entre cada elemento cuando los separas con comas. Esto es útil cuando quieres imprimir varias piezas de información juntas.

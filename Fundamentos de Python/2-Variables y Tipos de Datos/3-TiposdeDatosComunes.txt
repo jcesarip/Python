@@ -1,0 +1,28 @@
+Cuáles son los tipos de datos comunes en Python
+
+Un tipo de dato describe el tipo de valor que contiene una variable, por ejemplo, un número o un texto. Los lenguajes de programación usan tipos de datos para saber cómo almacenar y trabajar con diferentes tipos de información.
+
+Python es un lenguaje de tipado dinámico. Esto significa que no especificas el tipo de dato de una variable cuando la creas. Python determina el tipo a partir del valor asignado a la variable.
+
+name = 'John Doe' # Python knows this is a string
+age = 25 # Python knows this is an integer
+
+###
+Cuatro tipos de datos que usarás a lo largo de este módulo:
+
+Entero: Un número entero sin decimales, por ejemplo, 10 o -5.
+my_integer_var = 10
+print('Integer:', my_integer_var) # Integer: 10
+
+Flotante: Un número con un punto decimal, como 4.41 o -0.4.
+my_float_var = 4.50
+print('Float:', my_float_var) # Float: 4.5
+
+Cadena: Una secuencia de caracteres encerrados en comillas simples o dobles como 'Hello world!'.
+my_string_var = 'hello'
+print('String:', my_string_var) # String: hello
+
+Booleano: Un tipo verdadero o falso, escrito como True o False.
+my_boolean_var = True
+print('Boolean:', my_boolean_var) # Boolean: True
+

@@ -1,0 +1,65 @@
+### Concatenar cadenas
+En Python, puedes combinar múltiples cadenas juntas con el operador más (+). Este proceso se llama concatenación de cadenas.
+
+Ejemplos:
+my_str_1 = 'Hello'
+my_str_2 = "World"
+str_plus_str = my_str_1 + ' ' + my_str_2
+print(str_plus_str) # Hello World
+
+### Repetir cadenas
+También puedes repetir una cadena multiplicándola por un entero usando el operador *
+
+Ejemplos:
+sound = 'ha'
+repeated_sound = sound * 3
+print(repeated_sound) # hahaha
+
+### Concatenar cadenas con números
+La concatenación solo funciona con cadenas. Si intentas concatenar una cadena con un número, obtendrás un TypeError.
+
+name = 'John Doe'
+age = 26
+name_and_age = name + age # TypeError: can only concatenate str (not "int") to str
+
+Python requiere que todos los elementos sean cadenas antes de poder concatenarlos. Para solucionar eso, puedes convertir el número en una cadena con la función integrada str(), que devuelve la representación en cadena del valor dado sin modificar el valor original.
+
+Ejemplos:
+name = 'John Doe'
+age = 26
+name_and_age = name + str(age)
+print(name_and_age) # John Doe26
+
+También puedes usar el operador de asignación aumentada para la concatenación. Este se representa con un signo de más y un signo de igual (+=), y realiza tanto la concatenación como la asignación en un solo paso
+
+Ejemplos:
+name = 'John Doe'
+age = 26
+name_and_age = name  # Start with the name
+name_and_age += str(age)  # Append the age as string
+print(name_and_age)  # John Doe26
+
+También puedes usar *= para repetir una cadena y asignar el resultado de nuevo a la misma variable:
+
+Ejemplos:
+sound = 'ha'
+sound *= 3
+print(sound) # hahaha
+
+Tanto += como *= crean una nueva cadena y la asignan a la variable; no modifican la cadena original.
+
+### Interpolación de cadenas
+El proceso de insertar variables y expresiones en una cadena se llama interpolación de cadenas. Python tiene una categoría de cadena llamada f-strings (abreviatura de literales de cadena formateados), que te permite manejar la interpolación con una sintaxis compacta y legible.
+
+Las cadenas f comienzan con f (ya sea en minúsculas o mayúsculas) antes de las comillas, y te permiten insertar variables o expresiones dentro de campos de reemplazo indicados por llaves ({}).
+
+Ejemplos:
+name = 'John Doe'
+age = 26
+name_and_age = f'My name is {name} and I am {age} years old'
+print(name_and_age) # My name is John Doe and I am 26 years old
+
+num1 = 5
+num2 = 10
+print(f'The sum of {num1} and {num2} is {num1 + num2}') # The sum of 5 and 10 is 15
+

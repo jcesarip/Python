@@ -1,0 +1,44 @@
+Declarar variables
+
+En Python, las variables son como cajas etiquetadas para almacenar y referenciar datos de diferentes tipos. Para crear una variable, escribe su nombre a la izquierda, seguido del 
+operador de asignación (=) y el valor que quieres almacenar a la derecha. 
+
+name = 'John Doe'
+age = 25
+
+###Seguir las reglas de nomenclatura
+Al nombrar variables en Python, hay algunas reglas importantes que debes tener en cuenta:
+
+-Los nombres de variables solo pueden comenzar con una letra o un guion bajo (_), no con un número.
+-Los nombres de variables pueden contener letras (a-z, A-Z), dígitos (0-9) y guiones bajos (_).
+-Los nombres de variables distinguen entre mayúsculas y minúsculas: age, Age y AGE se consideran diferentes.
+-Los nombres de variables no pueden ser palabras clave reservadas de Python como if, class o def.
+
+
+###Seguir las convenciones de nomenclatura
+Primero, los nombres de variables deben estar en minúsculas, con palabras separadas por un guion bajo. Esto se llama snake case:
+
+my_variable_name = 'freeCodeCamp'
+
+-Debes usar nombres descriptivos para las variables. Por ejemplo, si deseas guardar la edad de un usuario como variable, user_age es mejor que age o una abreviatura como ua.
+
+user_age = 30
+
+-Otra convención es evitar usar nombres de variables de una sola letra. Los nombres de una sola letra son comunes en Python, pero deben evitarse porque no comunican ningún propósito ni significado.
+
+x = 56 # What do you mean by x?
+
+### Escribir comentarios
+El símbolo de numeral (#) y el texto que le sigue forman un comentario. Los comentarios te permiten agregar notas y explicaciones a tu código.
+
+En Python, los comentarios empiezan con un símbolo de libra (#), y el lenguaje ignora todo lo que siga después del símbolo # en esa línea
+
+# This is a single-line comment
+
+Los comentarios de varias líneas se pueden crear usando comentarios de una sola línea consecutivos
+
+# This is a
+# multi-line
+# comment
+
+Puedes usar comentarios para explicar tu código, dejar recordatorios para ti mismo, o aclarar por qué existe una línea.

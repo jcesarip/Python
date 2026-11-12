@@ -1,0 +1,85 @@
+Una cadena es una secuencia de caracteres rodeada por comillas simples o dobles. Python trata ambas formas como cadenas, así que puedes usar cualquiera de las dos.
+
+Ejemplos cadena simple:
+my_str_1 = 'Hello'
+my_str_2 = "World"
+
+Ejemplos cadena multilinea:
+my_str_3 = """Multiline
+string"""
+my_str_4 = '''Another
+multiline
+string'''
+
+####
+Escapa la comilla simple o doble en la cadena con una barra invertida (\). Con este método, puedes usar comillas simples o dobles para envolver la cadena en sí:
+
+msg = 'It\'s a sunny day'
+quote = "She said, \"Hello!\""
+
+###
+La barra invertida también puede combinarse con otros caracteres para representar caracteres que son difíciles de escribir directamente en una cadena. Estas combinaciones se llaman secuencias de escape. 
+\n: un salto de línea
+\t: una tabulación
+\\: una sola barra invertida
+
+Ejemplos:
+print('Hello\nworld')
+# Hello
+# world
+
+print('Name:\tAlice')  # Name:   Alice
+print('C:\\Users\\Alice')  # C:\Users\Alice
+
+###
+verificar si una cadena contiene uno o más caracteres. Para eso, Python proporciona el operador in
+
+Ejemplos:
+my_str = 'Hello world'
+
+print('Hello' in my_str)  # True
+print('hey' in my_str)    # False
+print('hi' in my_str)    # False
+print('e' in my_str)  # True
+print('f' in my_str)  # False
+
+###
+Obtener la longitud de una cadena y trabajar con los caracteres individuales en una cadena, un proceso llamado indexación.
+
+Ejemplos:
+my_str = 'Hello world'
+print(len(my_str))  # 11
+
+###
+Cada carácter en una cadena tiene una posición llamada índice. El índice es cero basado, lo que significa que el índice del primer carácter de una cadena es 0, el índice del segundo carácter es 1, y así sucesivamente.
+
+Ejemplos:
+my_str = "Hello world"
+print(my_str[0])  # H
+print(my_str[6])  # w
+
+La indexación negativa también está permitida, por lo que puedes obtener el último carácter de cualquier cadena con -1, el penúltimo carácter con -2
+
+Ejemplos:
+my_str = 'Hello world'
+print(my_str[-1])  # d
+print(my_str[-2]) # l
+
+###
+En Python, los valores pueden ser mutables o inmutables. Un valor mutable puede cambiarse después de ser creado, mientras que un valor inmutable no puede.
+
+Puedes apuntar una variable a un nuevo valor, lo que se llama reasignación, pero no puedes cambiar un valor inmutable agregando, eliminando o reemplazando alguno de sus elementos.
+
+Las cadenas son inmutables en Python, pero aún puedes reasignar una variable a una cadena diferente:
+
+Ejemplos:
+greeting = 'hi'
+greeting = 'hello'
+print(greeting) # hello
+
+Pero no se permite la modificación directa de una cadena:
+Ejemplos:
+greeting = 'hi'
+greeting[0] = 'H' # TypeError: 'str' object does not support item assignment
+
+Los enteros, los floats y los booleanos también son inmutables. 

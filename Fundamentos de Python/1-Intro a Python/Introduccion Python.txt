@@ -1,0 +1,11 @@
+Python es un lenguaje de programación de propósito general conocido por su simplicidad y flexibilidad. 
+
+-Los científicos de datos usan Python para limpiar datos, calcular estadísticas, encontrar patrones y crear gráficos. También se usa ampliamente para construir y entrenar modelos de aprendizaje automático.
+
+-En el desarrollo web, se usa para manejar tareas del lado del servidor como cuentas de usuario, envíos de formularios y guardar información.
+
+-ciberseguridad lo usan para detectar vulnerabilidades, analizar amenazas y automatizar escaneos de seguridad.
+
+-En DevOps y administración de sistemas, se usa para automatizar despliegues, gestionar infraestructura, monitorear servidores y procesar registros.
+
+-Python también es excelente para automatizar tareas repetitivas como extraer datos de hojas de cálculo, enviar correos electrónicos y gestionar archivos.
