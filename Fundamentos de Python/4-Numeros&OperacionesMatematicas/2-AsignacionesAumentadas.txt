@@ -1,0 +1,68 @@
+¿Cómo funcionan las asignaciones aumentadas?
+
+La asignación aumentada aplica una operación y almacena el resultado en la misma variable, todo en un solo paso.
+
+
+sintaxis básica:
+variable <operator>= value
+
+Para variables numéricas, esta es una forma más corta de escribir la siguiente asignación:
+variable = variable <operator> value
+
+sin asignación aumentada:
+
+my_var = 10
+my_var = my_var + 5
+print(my_var) # 15
+
+La ventaja de la asignación aumentada es que ofrece una forma concisa y legible de actualizar el valor de una variable sin repetir el nombre de la variable.
+
+Por ejemplo, puedes usar la asignación aumentada para agregar 5 a una variable existente:
+## Operador de asignación de suma (+=)
+Ejemplo:
+my_var = 10
+my_var += 5
+print(my_var) # 15
+
+## Operador de asignación de resta (-=) resta el operando derecho de la variable izquierda y almacena la diferencia en la variable izquierda
+
+Ejemplo:
+count = 14
+count -= 3
+print(cou#nt) # 11
+
+##  Operador de asignación de multiplicación (*=) multiplica la variable izquierda por el operando derecho y almacena el producto nuevamente en la variable izquierda.
+
+Ejemplo:
+product = 65
+product *= 7
+print(product) # 455
+
+## Operador de asignación de división (/=) divide la variable izquierda por el derecho y almacena el resultado nuevamente en la variable izquierda
+
+Ejemplo:
+price = 100
+price /= 4
+print(price) # 25.0
+
+## Operador de asignación de división entera (//=) divide con piso la variable izquierda por la derecha y almacena el resultado en la variable izquierda
+
+Ejemplo:
+total_pages = 23
+total_pages //= 5
+print(total_pages) # 4
+
+## Operador de asignación módulo (%=) calcula el resto de la variable izquierda dividida por la derecha y lo almacena de nuevo en la variable izquierda
+
+Ejemplo:
+bits = 35
+bits %= 2
+print(bits) # 1
+
+## Operador de asignación de exponenciación (**=) eleva la variable izquierda a la potencia del derecho y almacena el resultado nuevamente en la variable izquierda
+
+Ejemplo:
+power = 2
+power **= 3
+print(power) # 8
+

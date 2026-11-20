@@ -1,0 +1,37 @@
+##### Cómo funcionan los operadores de identidad
+En Python, las variables son nombres que se refieren a objetos. Los operadores de identidad verifican si dos operadores se refieren al mismo objeto. El operador isdevuelve True si es así, y False en caso contrario. El operador is not devuelve el resultado opuesto.
+
+La identidad difiere de la igualdad: ==y != comparan valores, mientras que is y is notcomparan la identidad del objeto. Usa operadores de igualdad al comparar valores numéricos o cadenas.
+
+None representa la ausencia de un valor. Es el único valor del tipo de dato NoneType.
+
+Tres objetos que puedes verificar con operadores de identidad son NONE, TRUE y FALSE. Cada uno es un singleton, lo que significa que existe exactamente un objeto para cada uno.
+
+### Verificar NONE
+Puedes usar is None para comprobar si falta un valor, o is not None para comprobar si está presente:
+
+response = None
+print(response is None) # True
+print(response is not None) # False
+
+None es falso, pero no es el mismo objeto que False. Por ejemplo, una respuesta podría ser Truepara sí, Falsepara no, o Nonesi no se ha dado respuesta:
+
+response = False
+if response is None:
+    print('No answer yet')
+else:
+    print('An answer was given') # An answer was given
+
+Usar if not responseen su lugar trataría a Falsey Nonepor igual. La verificación de identidad distingue una respuesta negativa de una respuesta ausente.
+
+### Verificar TRUE y FALSE
+También puedes usar la identidad para verificar específicamente los objetos booleanos:
+
+response = False
+print(response is True) # False
+print(response is False) # True
+print(response is not None) # True
+
+Estas verificaciones preguntan si responsees exactamente True, Falseo un objeto distinto de None. No solo prueben la veracidad.
+
+

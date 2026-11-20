@@ -1,0 +1,57 @@
+¿Cómo se formatean los números en una cadena F?
+
+Una cadena f te permite controlar cómo se ve un número cuando se muestra, sin cambiar el valor original, para que puedas seguir usándolo en cálculos.
+
+###  Cómo funcionan las especificaciones de formato
+La expresión f"{value:.2f}"se muestra valuecon exactamente dos dígitos después del punto decimal.
+
+Dentro de las llaves, cada personaje tiene un rol específico:
+-Los dos puntos :introducen la especificación de formato.
+-.2selecciona dos decimales
+-fSelecciona la presentación de punto fijo, que muestra el número en notación decimal.
+
+Eso significa que print(f"{12.5:.2f}")produce 12.50, mientras que el valor inicial permanece sin cambios. 
+
+Ejemplo :
+value = 12.5
+print(f"{value:.2f}") # 12.50
+print(value) # 12.5
+
+
+Por otro lado, formatear un valor como 12.3456con .2fproduce 12.35, porque el número debe redondearse para su visualización.
+Ejemplo:
+value = 12.3456
+print(f"{value:.2f}") # 12.35
+print(value) # 12.3456
+
+### El formato con una cadena F produce una cadena
+Una cadena f produce una cadena
+Ejemplo:
+
+value = 12.3456
+display = f"{value:.2f}"
+print(display) # 12.35
+print(value) # 12.3456
+print(type(display)) # <class 'str'>
+print(type(value)) # <class 'float'>
+
+
+### ¿En qué round()se diferencia del formato de cadena F?
+Una expresión como esta round(value, 2)te da un resultado numérico que puedes usar en cálculos posteriores.
+
+Para imprimir ese resultado se utiliza la visualización de números habitual de Python, por lo que no se garantizan los ceros finales.
+
+value = 12.5
+rounded_value = round(value, 2)
+formatted_value = f"{value:.2f}"
+print(rounded_value) # 12.5
+print(formatted_value) # 12.50
+
+### El formato no cambia el valor subyacente.
+Como viste anteriormente, algunos números decimales como 0.1y 0.2solo pueden aproximarse como números de coma flotante. Por lo tanto, su suma puede parecer un poco sorprendente cuando se imprime directamente:
+
+Ejemplo:
+total = 0.1 + 0.2
+print(total) # 0.30000000000000004
+print(f"{total:.2f}") # 0.30
+

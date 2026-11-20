@@ -1,0 +1,118 @@
+#### Cómo funcionan las sentencias condicionales y los operadores de comparación
+
+-Condicionales permiten controlar el flujo de tu programa basándote en si ciertas condiciones son verdaderas o falsas.
+
+-Los operadores de comparación son operadores que te permiten comparar dos o más valores y devolver un valor booleano.
+
+Uso de operadores de comparaciónUso de operadores de comparación:
+Operador	        Nombre	    Descripción
+==	                Igual	    Verifica si dos valores son iguales
+!=	                Distinto	Verifica si dos valores no son iguales
+>	                Mayor que	Verifica si el valor de la izquierda es mayor que el valor de la derecha
+<	                Menor que	Verifica si el valor de la izquierda es menor que el valor de la derecha
+>=	                Mayor o igual que	Verifica si el valor de la izquierda es mayor o igual que el valor de la derecha
+<=	                Menor o igual que	Verifica si el valor de la izquierda es menor o igual que el valor de la derechaOperador	Nombre	Descripción
+==	                Igual	    Verifica si dos valores son iguales
+!=	                Distinto	Verifica si dos valores no son iguales
+>	                Mayor que	Verifica si el valor de la izquierda es mayor que el valor de la derecha
+<	                Menor que	Verifica si el valor de la izquierda es menor que el valor de la derecha
+>=	                Mayor o igual que	Verifica si el valor de la izquierda es mayor o igual que el valor de la derecha
+<=	                Menor o igual que	Verifica si el valor de la izquierda es menor o igual que el valor de la derecha
+
+Aquí algunas de esas expresiones que evalúan a Trueo False:
+Ejemplo:
+print(3 > 4) # False
+print(3 < 4) # True
+print(3 == 4) # False
+print(4 == 4) # True
+print(3 != 4) # True
+print(3 >= 4) # False
+print(3 <= 4) # True
+
+Estos operadores se pueden usar en condicionales para comparar valores y ejecutar cierto código basado en si el condicional evalúa a Trueo False.
+
+### Uso de sentencias IF
+La condicional más básica es la declaración if. Aquí está la sintaxis básica: la condicional más básica es la declaración if. Aquí está la sintaxis básica:
+
+if condition:
+    pass # Code to execute if condition is True
+
+Cuando se ejecuta una sentencia pass, no sucede nada. Esta es una palabra clave especial que puede usarse como marcador de posición para código futuro y es útil cuando no se permiten bloques de código vacíos.
+
+El código dentro del cuerpo de la sentencia ifse ejecuta solo cuando Python considera que la condición es verdadera.
+
+Ejemplo:
+age = 18
+if age >= 18:
+    print('You are an adult') # You are an adult
+
+"Los cuatro espacios antes de print('You are an adult')sangrar esa línea y la colocación dentro del bloque if."
+
+=== El siguiente código generaría un IndentationError, que es la forma en que Python indica que se requiere sangría en un punto determinado del código: ===
+
+age = 18
+if age >= 18:
+print('You are an adult') # IndentationError: expected an indented block after 'if' statement on line 3
+
+si age es menor que 18, no se imprime nada en el terminal.
+
+### Agregar una cláusula ELSE
+La cláusula ELSE se ejecuta cuando la condición del ifes falsa. Aquí está la sintaxis para una sentencia if...else
+
+if condition:
+    pass # Code to execute if condition is True
+else:
+    pass # Code to execute if condition is False
+
+
+Ejemplo:
+age = 12
+if age >= 18:
+    print('You are an adult')
+else:
+    print('You are not an adult yet') # You are not an adult yet
+
+=== Tenga en cuenta que no puede colocar ninguna instrucción entre el bloque ify la cláusula else. El siguiente código generaría un SyntaxError: ====
+
+age = 12
+if age >= 18:
+    print('You are an adult')
+print('Almost there!')
+else: # SyntaxError: invalid syntax
+    print('You are not an adult yet')
+
+### Agregar cláusulas ELFI (ELSE IF)
+Puede haber situaciones en las que quieras considerar múltiples condiciones. Para eso, Python te permite extender tu sentencia IF con la palabra clave ELIF(else if).
+
+if condition1:
+    pass # Code to execute if condition1 is True
+elif condition2:
+    pass # Code to execute if condition1 is False and condition2 is True
+else:
+    pass # Code to execute if all conditions are False
+
+Ejemplo:
+age = 12
+if age >= 18:
+    print('You are an adult')
+elif age >= 13:
+    print('You are a teenager')
+else:
+    print('You are a child') # You are a child
+
+Puedes usar tantas cláusulas elif como quiera.
+
+Ejemplo:
+age = 2
+if age >= 65:
+    print('You are a senior citizen')
+elif age >= 30:
+    print('You are an adult in your prime')
+elif age >= 18:
+    print('You are a young adult')
+elif age >= 13:
+    print('You are a teenager')
+elif age >= 3:
+    print('You are a young child')
+else:
+    print('You are a toddler or an infant') # You are a toddler or an infant
