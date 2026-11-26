@@ -1,0 +1,19 @@
+¿Qué es el ámbito (scope) en Python y cómo funciona?
+
+El ámbito determina dónde puedes usar una variable en tu código. Python tiene reglas adicionales de ámbito. Por ahora, enfócate en el ámbito local y global.
+
+Una variable creada afuera de una función tiene ámbito global. Puedes usarla tanto dentro como fuera de funciones.
+Una variable creada dentro de una función tiene ámbito local. Solo puedes usarla dentro de esa función. Los parámetros de función también son variables locales.
+
+Ejemplo:
+tax_rate = 0.1
+
+def calculate_tax(price):
+    tax = price * tax_rate
+    return tax
+ 
+print(tax) # NameError: name 'tax' is not defined
+
+Python pasa argumentos por asignación. Cuando llamas a una función, cada parámetro se convierte en un nombre local que inicialmente se refiere al objeto proporcionado como su argumento. Python no copia automáticamente ese objeto.
+
+Cuando se llama a double_number(original), tanto number como original se refieren inicialmente al entero 10. La asignación number = number * 2 hace que el parámetro local number se refiera a 20. La variable original sigue refiriéndose a 10, por lo que imprimirla después de la llamada a la función muestra que su valor no ha cambiado.
